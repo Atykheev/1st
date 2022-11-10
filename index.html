@@ -2,86 +2,106 @@
 <head>
   <meta charset="UTF-8" />
   <title>Resume Tykheev A</title>
+  <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-  <table cellspacing="15">
-    <tr>
-      <td>
-        <img src="avatar.jpg" width="150" alt="мое фото" />
-      </td>
-      <td>
+  <div class="container">
+    <div class="info">
+      <img src="avatar.jpg" alt="мое фото" class="avatar" />
+
+      <div class="info-text">
         <h1>Тыхеев Аюр</h1>
-        <p>
-          <em>Первый проект для <strong>HTML</strong></em>
-        </p>
+        <p>Первый проект для <strong>HTML</strong></p>
         <p>Моя общая информация</p>
-      </td>
-    </tr>
-  </table>
 
-  <hr size="1" />
-  <h2>Мои социальные сети</h2>
-  <ul type="square">
-    <li><a href="http://t.me/mrBlancin" target="blanc">telegram</a></li>
-    <li>
-      <a href="http://instagram.com/tykheevaiur" target="blanc">instagram</a>
-    </li>
-  </ul>
+        <h4>Мои социальные сети</h4>
 
-  <hr size="1" />
+        <type>
+          <a href="http://t.me/mrBlancin" target="blanc">telegram</a>
+          |
+          <a href="http://instagram.com/tykheevaiur" target="blanc"
+            >instagram</a
+          >
+        </type>
+      </div>
+    </div>
 
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>плавание</li>
-    <li>програмирование</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>java script</li>
-  </ol>
+    <div class="card bg-yellow">
+      <h2>Мои хобби</h2>
+      <ol class="list">
+        <li>плавание</li>
+        <li>програмирование</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>java script</li>
+      </ol>
+    </div>
 
-  <hr size="1" />
+    <div class="card bg-green">
+      <h2>Опыт работы</h2>
+      <table class="table">
+        <tr>
+          <td>ЗАО "Дети"</td>
+          <td></td>
+          <td>Менеджер по закупкам</td>
 
-  <h2>Опыт работы</h2>
-  <table>
-    <tr>
-      <th>Компания</th>
-      <th>Должность</th>
-      <th>Год</th>
-    </tr>
-    <tr>
-      <td>Сбербанк</td>
-      <td>Отдел судебного и исполнительного производства</td>
-      <td>2016 - 2022</td>
-    </tr>
-  </table>
+          <td>2012 - 2013</td>
+        </tr>
+        <tr>
+          <td>Сбербанк</td>
+          <td>Судебное и исполнительное производство</td>
+          <td>Специалист</td>
+          <td>2016 - 2018</td>
+        </tr>
+        <tr>
+          <td>Сбербанк</td>
+          <td>Досудебное взыскание задолженности</td>
+          <td>Ведущий специалист</td>
+          <td>2018 - 2022</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card bg-red">
+     
+      <h2>You Tube</h2>
+      <ul class="link-list">
+        <li>
+          <a href="https://www.youtube.com/feed/subscriptions" target="blanc"
+            >Каналы youtube</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=aLqc8TdoLJ0&ab_channel=IvyStationRecords"
+            target="blanc"
+            >Hip-Hop Lo-Fi</a
+          >
+        </li>
+      </ul>
+    </div>
 
-  <hr size="1" />
+    <div class="contact">
+      <h2>Связаться со мной</h2>
+      <form action="/">
+        <div class="row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="введите ваше имя" />
+          </div>
 
-  <h2>You Tube</h2>
-  <a href="youtube.html"> Список каналов</a>
+          <div class="form-group">
+            <label for="Email">Ваш Email:</label>
+            <input type="Email" id="Email" placeholder="введите Email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="text">Ваше сообщение:</label>
 
-  <hr size="1" />
+          <textarea id="text" rows="3" cols="25"></textarea>
+        </div>
 
-  <h2>Связаться со мной</h2>
-  <form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="введите ваше имя" />
-
-    <br />
-    <br />
-
-    <label for="Email">Ваш Email:</label>
-    <input type="text" id="Email" placeholder="введите Email" />
-
-    <br />
-    <br />
-
-    <label for="text">Ваше сообщение:</label>
-    <br />
-    <textarea id="text" rows="3" cols="25"></textarea>
-
-    <br />
-
-    <input type="submit" value="связаться" />
-  </form>
+        <input class="button" type="submit" value="связаться" />
+      </form>
+    </div>
+  </div>
 </body>
